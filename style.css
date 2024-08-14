@@ -1,10 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-    } /* Para resetear los estilos por defecto de los navegadores de forma efectiva, utilizamos las propiedades margin, que define el margen en los cuatro lados del elemento arriba, derecha, abajo, izquierda, y padding, que define el relleno interno en los mismos cuatro lados del elemento, ambas con un valor de 0.*/
-
+    }
 
 body {
     background-color: aliceblue;
     color:rgb(75, 33, 33);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.encriptador{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    justify-content: space-between;
+
+}
+
+.encriptador__contenido{
+
+    width: 240px;
+}
+
+
+.encriptador__contenido__ingresar {
+
+    font-size: 32px;
+
+}
+
+
+.encriptador__botones{
+
+    display: flex;
+    justify-content: space-between;
 }
