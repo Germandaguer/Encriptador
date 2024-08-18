@@ -20,26 +20,18 @@ body {
 
 .encriptador__contenido{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     margin: 5%;
     
 }
 
+.encriptador__advertencia{
 
-.encriptador__contenido__ingresar {
-    
-    margin: 10px;
-    padding: 10px;
-    font-size: 32px;
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-
-.encriptador__advertencia {
-
-
-}
-
-
 .encriptador__botones{
 
     display: flex;
