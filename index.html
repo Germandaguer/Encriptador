@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header></header>
+    <header class="logo"><img src="logo.png" alt="logo de la A"></header>
 
     <main class="encriptador">
         <section class="encriptador__contenido">
             <div>
-                <textarea name="Ingrese el texto aquí" id=""></textarea>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             </div>   
                 <div class="encriptador__advertencia">
                     <span>Solo letras minúsculas y sin acentos</span>
-                
-                    <div class="encriptador__botones">
-                        <a>Encriptar</a>
-                        <a>Desencriptar</a>
-                    </div>
                 </div>
+                    <div class="encriptador__botones">
+                        <button>Encriptar</button>
+                        <button>Desencriptar</button>
+                    </div>
+                
         </section>
-
+        <section>
             <div>
-
+                <textarea class="texto-columna-der" cols="20" rows="10"></textarea>
                 <img src="Muñeco.png" alt="persona que tiene una lupa">
+            </div>
+                <div>
                 <p>Ningún mensaje fue encontrado</p>
                 <P>Ingresa el texto que desees encriptar o desencriptar.</P>
-
-            </div>
+                </div>
+                <div>
+                    <button class="boton__copiar">Copiar</button>
+                </div>
+                
+        </section>
     </main>
 
     <footer></footer>
