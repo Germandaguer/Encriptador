@@ -1,10 +1,11 @@
 
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'inter';
+
     }
 
 body {
@@ -23,6 +24,7 @@ body {
     width: 10%;
 }
 main {
+
     display: flex;
     align-items:center;
     margin: 5px;
@@ -40,9 +42,17 @@ main {
 }
 
 .text_area{
+    display: flex;
     width: 680px;
-    height: 680px;
+    height: 600px;
     font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background-color: #E8E8E8;
+
+
+
+
 }
 
 .encriptador_advertencia{
@@ -81,21 +91,30 @@ main {
 
 .encriptador_section_segunda{
 
-    display: flex;
-    align-items: center;
+
 }
 
-.texto_mensaje{
+.texto_mensaje {
     width: 400px;
-    height: 944px;
-    margin: 40px;
+    height: 700px;
+    margin: 40px 40px 0px 0px;
+    border-radius: 4cap;
+    background-color: #f4f4f4;
+    background-image:url(Muñeco.png);
+    background-repeat: no-repeat;
+}
+.texto_mensaje::placeholder{
 
-
+    font-size: 20px;
+    text-align: center;
+    text-decoration: solid;
+    padding-top: 100%;
+    text-justify: auto;
 }
 
 .boton_copiar{
 
-    width: 328px;
+    width: 400px;
     height: 67px;
     padding: 8px 16px 8px 16px;
     border-radius: 5cap;
