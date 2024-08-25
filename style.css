@@ -89,19 +89,16 @@ main {
     color:#0A3871;
 }
 
-.encriptador_section_segunda{
-
-
-}
 
 .texto_mensaje {
     width: 400px;
     height: 700px;
     margin: 40px 40px 0px 0px;
-    border-radius: 4cap;
+    border-radius: 1cap;
     background-color: #f4f4f4;
     background-image:url(imagenes/Muñeco.png);
     background-repeat: no-repeat;
+    font-size: 32px;
 }
 .texto_mensaje::placeholder{
 
@@ -109,7 +106,6 @@ main {
     text-align: center;
     text-decoration: solid;
     padding-top: 100%;
-    text-justify: auto;
 }
 
 .boton_copiar{
