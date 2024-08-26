@@ -13,22 +13,20 @@ function botonEncriptar() {
 function botonDesencriptar() {
     let textoDesencriptado = desencriptar(textArea.value);
     mensajeEncriptado.value = textoDesencriptado;
-    textArea.value = "";
-    mensajeEncriptado.style.backgroundImage = "none";
+    textArea.value = ""; // limpio el campo testarea
+    mensajeEncriptado.style.backgroundImage = "none";// borro la imagen
     return
     
 }
 
-function botonCopiar() {
-    // Obtén el elemento con la clase 'texto_mensaje'
-    let copiarTexto = document.querySelector(".texto_mensaje");
 
-    // Selecciona el texto del elemento
-    copiarTexto.select();
-    copiarTexto.setSelectionRange(0, 99999); // Para dispositivos móviles 
-    // Copia el texto al portapapeles
-    document.execCommand('copy');
-    }
+function botonCopiar() {
+    
+    let copiarTexto = document.querySelector(".texto_mensaje").value;// Obtengo el valor del texto del elemento con la clase 'texto_mensaje'
+    navigator.clipboard.writeText(copiarTexto);    // Copia el texto al portapapeles mediante la api
+    mensajeEncriptado.value = "";
+    return
+}
 
 
 function encriptar(encriptarletras) {
